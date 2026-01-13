@@ -1,0 +1,6 @@
+{
+  "name": "ai-rfp-frontend",
+  "scripts": {
+    "dev": "vite"
+  }
+}

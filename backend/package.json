@@ -1,0 +1,19 @@
+{
+  "name": "ai-rfp-backend",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.0",
+    "nodemailer": "^6.9.8",
+    "openai": "^4.28.0",
+    "@prisma/client": "^5.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3",
+    "prisma": "^5.9.0"
+  }
+}
