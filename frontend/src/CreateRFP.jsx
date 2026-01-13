@@ -1,10 +1,10 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 export default function CreateRFP() {
   const [text, setText] = useState('');
   const [res, setRes] = useState(null);
   return (
     <div>
-      <textarea onChange={e => setText(e.target.value)} />
+      <textarea value={text} onChange={(e) => setText(e.target.value)} />
       <button onClick={async () => {
         const r = await fetch('http://localhost:4000/api/rfps', {
           method: 'POST',

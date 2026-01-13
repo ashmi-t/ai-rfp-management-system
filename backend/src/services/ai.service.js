@@ -1,10 +1,3 @@
-import OpenAI from 'openai';
-const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
-
 export async function generateRFP(text) {
-  const res = await openai.chat.completions.create({
-    model: 'gpt-4',
-    messages: [{ role: 'user', content: text }]
-  });
-  return res.choices[0].message.content;
-}
+  return { title: "Mock RFP", description:`RFP generated for: ${text}`, requirements:["Requirement A", "Requirement B", "Requirement C"], timeline: "30 days", budget: "$20,000"};} 
+  
